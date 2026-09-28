@@ -1,0 +1,1 @@
+# OpenCV-AI-Competition-2026-powered-by-AWS-hack
