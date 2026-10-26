@@ -1,0 +1,146 @@
+{
+ "id": "aedf3378d2be",
+ "disposition": "FAIL",
+ "reason": "1 defect(s): crack",
+ "planner": "rules",
+ "opencv": "5.0.0",
+ "quality_initial": {
+  "sharpness": 39.9605,
+  "brightness": 146.0635,
+  "contrast": 8.9374,
+  "glare_frac": 0.0,
+  "noise": 2.9652,
+  "issues": []
+ },
+ "quality_final": {
+  "sharpness": 39.9605,
+  "brightness": 146.0635,
+  "contrast": 8.9374,
+  "glare_frac": 0.0,
+  "noise": 2.9652,
+  "issues": []
+ },
+ "defects": [
+  {
+   "bbox": [
+    118,
+    429,
+    90,
+    65
+   ],
+   "area": 475.0,
+   "elongation": 7.418,
+   "solidity": 0.416,
+   "strength": 26.98,
+   "kind": "crack",
+   "confidence": 0.834
+  }
+ ],
+ "candidates": [
+  {
+   "id": 0,
+   "status": "detected",
+   "bbox": [
+    118,
+    429,
+    90,
+    65
+   ],
+   "area": 475.0,
+   "elongation": 7.418,
+   "solidity": 0.416,
+   "strength": 26.98,
+   "kind": "crack",
+   "confidence": 0.834
+  }
+ ],
+ "trace": [
+  {
+   "i": 0,
+   "tool": "request_recapture",
+   "args": {
+    "hint": "lighting"
+   },
+   "reason": "glare saturates pixels (information lost) -> re-shoot with diffuse lighting",
+   "observation": {
+    "hint": "lighting",
+    "attempt": 1,
+    "new_quality": {
+     "sharpness": 39.9605,
+     "brightness": 146.0635,
+     "contrast": 8.9374,
+     "glare_frac": 0.0,
+     "noise": 2.9652,
+     "issues": []
+    }
+   },
+   "ms": 29.2,
+   "planner": "rules"
+  },
+  {
+   "i": 1,
+   "tool": "detect_defects",
+   "args": {
+    "sensitivity": 1.0
+   },
+   "reason": "image conditioned; run detection",
+   "observation": {
+    "sensitivity": 1.0,
+    "new_candidates": [
+     0
+    ],
+    "total": 1
+   },
+   "ms": 14.1,
+   "planner": "rules"
+  },
+  {
+   "i": 2,
+   "tool": "detect_defects",
+   "args": {
+    "sensitivity": 1.6
+   },
+   "reason": "sweep for faint defects at higher sensitivity",
+   "observation": {
+    "sensitivity": 1.6,
+    "new_candidates": [],
+    "total": 1
+   },
+   "ms": 14.2,
+   "planner": "rules"
+  },
+  {
+   "i": 3,
+   "tool": "finalize",
+   "args": {
+    "disposition": "FAIL",
+    "reason": "1 defect(s): crack"
+   },
+   "reason": "all evidence gathered",
+   "observation": {
+    "disposition": "FAIL",
+    "reason": "1 defect(s): crack"
+   },
+   "ms": 0.0,
+   "planner": "rules"
+  }
+ ],
+ "recaptures": 1,
+ "total_ms": 108.5,
+ "ground_truth": {
+  "name": "part_0042",
+  "defects": [
+   {
+    "kind": "crack",
+    "bbox": [
+     118,
+     430,
+     90,
+     64
+    ]
+   }
+  ],
+  "degradation": "glare",
+  "label": "FAIL"
+ }
+}

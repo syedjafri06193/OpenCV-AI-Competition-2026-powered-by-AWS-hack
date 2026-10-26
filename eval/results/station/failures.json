@@ -1,0 +1,218 @@
+[
+ {
+  "mode": "baseline",
+  "part": "part_20000",
+  "type": "escaped defect",
+  "degradation": "dark"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20031",
+  "type": "escaped defect",
+  "degradation": "dark"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20033",
+  "type": "escaped defect",
+  "degradation": "noise"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20036",
+  "type": "escaped defect",
+  "degradation": "noise"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20085",
+  "type": "escaped defect",
+  "degradation": "noise"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20086",
+  "type": "escaped defect",
+  "degradation": "noise"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20088",
+  "type": "escaped defect",
+  "degradation": "dark"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20106",
+  "type": "escaped defect",
+  "degradation": "dark"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20112",
+  "type": "escaped defect",
+  "degradation": "glare"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20126",
+  "type": "escaped defect",
+  "degradation": "dark"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20138",
+  "type": "escaped defect",
+  "degradation": "dark"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20145",
+  "type": "escaped defect",
+  "degradation": "noise"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20166",
+  "type": "escaped defect",
+  "degradation": "noise"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20189",
+  "type": "escaped defect",
+  "degradation": "dark"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20209",
+  "type": "escaped defect",
+  "degradation": "noise"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20211",
+  "type": "escaped defect",
+  "degradation": "noise"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20256",
+  "type": "escaped defect",
+  "degradation": "noise"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20291",
+  "type": "escaped defect",
+  "degradation": "noise"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20293",
+  "type": "escaped defect",
+  "degradation": "noise"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20300",
+  "type": "escaped defect",
+  "degradation": "noise"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20308",
+  "type": "escaped defect",
+  "degradation": "noise"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20318",
+  "type": "escaped defect",
+  "degradation": "noise"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20329",
+  "type": "escaped defect",
+  "degradation": "noise"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20340",
+  "type": "escaped defect",
+  "degradation": "noise"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20348",
+  "type": "escaped defect",
+  "degradation": "dark"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20361",
+  "type": "escaped defect",
+  "degradation": "noise"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20362",
+  "type": "escaped defect",
+  "degradation": "none"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20363",
+  "type": "escaped defect",
+  "degradation": "noise"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20371",
+  "type": "escaped defect",
+  "degradation": "dark"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20388",
+  "type": "escaped defect",
+  "degradation": "dark"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20417",
+  "type": "escaped defect",
+  "degradation": "glare"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20422",
+  "type": "escaped defect",
+  "degradation": "noise"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20435",
+  "type": "escaped defect",
+  "degradation": "noise"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20470",
+  "type": "escaped defect",
+  "degradation": "noise"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20473",
+  "type": "escaped defect",
+  "degradation": "noise"
+ },
+ {
+  "mode": "baseline",
+  "part": "part_20492",
+  "type": "escaped defect",
+  "degradation": "noise"
+ }
+]

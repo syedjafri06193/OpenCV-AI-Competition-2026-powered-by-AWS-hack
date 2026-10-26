@@ -1,0 +1,104 @@
+{
+ "id": "67c3c3d7f05b",
+ "disposition": "ESCALATE",
+ "reason": "glare hid part of the surface; human should re-image or inspect",
+ "planner": "rules",
+ "opencv": "5.0.0",
+ "quality_initial": {
+  "sharpness": 39.535,
+  "brightness": 172.4614,
+  "contrast": 26.9435,
+  "glare_frac": 0.0478,
+  "noise": 1.4826,
+  "issues": [
+   "glare"
+  ]
+ },
+ "quality_final": {
+  "sharpness": 39.7565,
+  "brightness": 120.4107,
+  "contrast": 25.797,
+  "glare_frac": 0.0,
+  "noise": 11.8608,
+  "issues": [
+   "noisy"
+  ]
+ },
+ "defects": [],
+ "candidates": [],
+ "trace": [
+  {
+   "i": 0,
+   "tool": "suppress_glare",
+   "args": {},
+   "reason": "capture issue 'glare' -> apply suppress_glare",
+   "observation": {
+    "quality_after": {
+     "sharpness": 39.7565,
+     "brightness": 120.4107,
+     "contrast": 25.797,
+     "glare_frac": 0.0,
+     "noise": 11.8608,
+     "issues": [
+      "noisy"
+     ]
+    }
+   },
+   "ms": 19.8,
+   "planner": "rules"
+  },
+  {
+   "i": 1,
+   "tool": "detect_defects",
+   "args": {
+    "sensitivity": 1.0
+   },
+   "reason": "image conditioned; run detection",
+   "observation": {
+    "sensitivity": 1.0,
+    "new_candidates": [],
+    "total": 0
+   },
+   "ms": 10.9,
+   "planner": "rules"
+  },
+  {
+   "i": 2,
+   "tool": "detect_defects",
+   "args": {
+    "sensitivity": 1.6
+   },
+   "reason": "sweep for faint defects at higher sensitivity",
+   "observation": {
+    "sensitivity": 1.6,
+    "new_candidates": [],
+    "total": 0
+   },
+   "ms": 10.6,
+   "planner": "rules"
+  },
+  {
+   "i": 3,
+   "tool": "finalize",
+   "args": {
+    "disposition": "ESCALATE",
+    "reason": "glare hid part of the surface; human should re-image or inspect"
+   },
+   "reason": "all evidence gathered",
+   "observation": {
+    "disposition": "ESCALATE",
+    "reason": "glare hid part of the surface; human should re-image or inspect"
+   },
+   "ms": 0.4,
+   "planner": "rules"
+  }
+ ],
+ "recaptures": 0,
+ "total_ms": 51.2,
+ "ground_truth": {
+  "name": "part_0077",
+  "defects": [],
+  "degradation": "glare",
+  "label": "PASS"
+ }
+}

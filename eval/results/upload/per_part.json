@@ -1,0 +1,4002 @@
+[
+ {
+  "name": "part_20000",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20001",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20002",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): scratch"
+ },
+ {
+  "name": "part_20003",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20004",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20005",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20006",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20007",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20008",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20009",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "3 defect(s): scratch"
+ },
+ {
+  "name": "part_20010",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20011",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20012",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20013",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20014",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20015",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): scratch"
+ },
+ {
+  "name": "part_20016",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20017",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, pit"
+ },
+ {
+  "name": "part_20018",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, scratch"
+ },
+ {
+  "name": "part_20019",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20020",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20021",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20022",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20023",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20024",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20025",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, scratch"
+ },
+ {
+  "name": "part_20026",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20027",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20028",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20029",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20030",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20031",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, scratch"
+ },
+ {
+  "name": "part_20032",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, scratch"
+ },
+ {
+  "name": "part_20033",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20034",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20035",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20036",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): scratch"
+ },
+ {
+  "name": "part_20037",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20038",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20039",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20040",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20041",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, scratch"
+ },
+ {
+  "name": "part_20042",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20043",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "image still blurry after sharpening; request recapture"
+ },
+ {
+  "name": "part_20044",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20045",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "2 unverified suspect region(s)"
+ },
+ {
+  "name": "part_20046",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "1 unverified suspect region(s)"
+ },
+ {
+  "name": "part_20047",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20048",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, pit"
+ },
+ {
+  "name": "part_20049",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, pit"
+ },
+ {
+  "name": "part_20050",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20051",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20052",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20053",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, pit"
+ },
+ {
+  "name": "part_20054",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20055",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20056",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, pit"
+ },
+ {
+  "name": "part_20057",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20058",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit"
+ },
+ {
+  "name": "part_20059",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20060",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, pit"
+ },
+ {
+  "name": "part_20061",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20062",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20063",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20064",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20065",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20066",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): scratch"
+ },
+ {
+  "name": "part_20067",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20068",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20069",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20070",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20071",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20072",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20073",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit"
+ },
+ {
+  "name": "part_20074",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20075",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20076",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, scratch"
+ },
+ {
+  "name": "part_20077",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20078",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20079",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): unknown"
+ },
+ {
+  "name": "part_20080",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "3 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20081",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20082",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, scratch"
+ },
+ {
+  "name": "part_20083",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "image still blurry after sharpening; request recapture"
+ },
+ {
+  "name": "part_20084",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): scratch"
+ },
+ {
+  "name": "part_20085",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20086",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20087",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20088",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20089",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20090",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20091",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack"
+ },
+ {
+  "name": "part_20092",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20093",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20094",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, scratch"
+ },
+ {
+  "name": "part_20095",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20096",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20097",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20098",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20099",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20100",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20101",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, pit"
+ },
+ {
+  "name": "part_20102",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20103",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20104",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20105",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20106",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack"
+ },
+ {
+  "name": "part_20107",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20108",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20109",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "3 defect(s): scratch"
+ },
+ {
+  "name": "part_20110",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit"
+ },
+ {
+  "name": "part_20111",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20112",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): scratch"
+ },
+ {
+  "name": "part_20113",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, scratch"
+ },
+ {
+  "name": "part_20114",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20115",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20116",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20117",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "5 unverified suspect region(s)"
+ },
+ {
+  "name": "part_20118",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20119",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "image still blurry after sharpening; request recapture"
+ },
+ {
+  "name": "part_20120",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20121",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20122",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20123",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20124",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20125",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20126",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20127",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "7 unverified suspect region(s)"
+ },
+ {
+  "name": "part_20128",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20129",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "7 unverified suspect region(s)"
+ },
+ {
+  "name": "part_20130",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20131",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20132",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20133",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20134",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20135",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "image still blurry after sharpening; request recapture"
+ },
+ {
+  "name": "part_20136",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20137",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20138",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20139",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "image still blurry after sharpening; request recapture"
+ },
+ {
+  "name": "part_20140",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20141",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20142",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20143",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20144",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, scratch"
+ },
+ {
+  "name": "part_20145",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "3 defect(s): scratch"
+ },
+ {
+  "name": "part_20146",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20147",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20148",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20149",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20150",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20151",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20152",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack"
+ },
+ {
+  "name": "part_20153",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20154",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20155",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20156",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20157",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20158",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20159",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20160",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20161",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "image still blurry after sharpening; request recapture"
+ },
+ {
+  "name": "part_20162",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20163",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20164",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): scratch"
+ },
+ {
+  "name": "part_20165",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20166",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20167",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20168",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): scratch"
+ },
+ {
+  "name": "part_20169",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20170",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20171",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20172",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20173",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20174",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20175",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20176",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20177",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20178",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20179",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20180",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20181",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20182",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20183",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20184",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20185",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20186",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "1 unverified suspect region(s)"
+ },
+ {
+  "name": "part_20187",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20188",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20189",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20190",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20191",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20192",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20193",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20194",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20195",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20196",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20197",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20198",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20199",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "3 defect(s): scratch"
+ },
+ {
+  "name": "part_20200",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): scratch"
+ },
+ {
+  "name": "part_20201",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20202",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20203",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20204",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20205",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20206",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, pit"
+ },
+ {
+  "name": "part_20207",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20208",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20209",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20210",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20211",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20212",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20213",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20214",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20215",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): scratch"
+ },
+ {
+  "name": "part_20216",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20217",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, pit"
+ },
+ {
+  "name": "part_20218",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20219",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20220",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20221",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, pit"
+ },
+ {
+  "name": "part_20222",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20223",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20224",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20225",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit"
+ },
+ {
+  "name": "part_20226",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20227",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20228",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20229",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20230",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20231",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20232",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "3 defect(s): crack, scratch"
+ },
+ {
+  "name": "part_20233",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20234",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20235",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20236",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "image still blurry after sharpening; request recapture"
+ },
+ {
+  "name": "part_20237",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20238",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20239",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20240",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20241",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20242",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20243",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20244",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20245",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20246",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20247",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20248",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20249",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20250",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20251",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20252",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20253",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20254",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20255",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20256",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20257",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20258",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, pit"
+ },
+ {
+  "name": "part_20259",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): scratch"
+ },
+ {
+  "name": "part_20260",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20261",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20262",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20263",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20264",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20265",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20266",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20267",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20268",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20269",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20270",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20271",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20272",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20273",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20274",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20275",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20276",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20277",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20278",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20279",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20280",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20281",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20282",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): scratch"
+ },
+ {
+  "name": "part_20283",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "image still blurry after sharpening; request recapture"
+ },
+ {
+  "name": "part_20284",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20285",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20286",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20287",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20288",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20289",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20290",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20291",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20292",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20293",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20294",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20295",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20296",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20297",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20298",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20299",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20300",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "3 defect(s): scratch"
+ },
+ {
+  "name": "part_20301",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20302",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20303",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20304",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20305",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20306",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit"
+ },
+ {
+  "name": "part_20307",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20308",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20309",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20310",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack"
+ },
+ {
+  "name": "part_20311",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "2 unverified suspect region(s)"
+ },
+ {
+  "name": "part_20312",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, scratch"
+ },
+ {
+  "name": "part_20313",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20314",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20315",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "1 unverified suspect region(s)"
+ },
+ {
+  "name": "part_20316",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20317",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "image still blurry after sharpening; request recapture"
+ },
+ {
+  "name": "part_20318",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20319",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20320",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20321",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "10 unverified suspect region(s)"
+ },
+ {
+  "name": "part_20322",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20323",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20324",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20325",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20326",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20327",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20328",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20329",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): scratch"
+ },
+ {
+  "name": "part_20330",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20331",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20332",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20333",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20334",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, scratch"
+ },
+ {
+  "name": "part_20335",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, scratch"
+ },
+ {
+  "name": "part_20336",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20337",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20338",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20339",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20340",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20341",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, scratch"
+ },
+ {
+  "name": "part_20342",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20343",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, pit"
+ },
+ {
+  "name": "part_20344",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit"
+ },
+ {
+  "name": "part_20345",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): scratch"
+ },
+ {
+  "name": "part_20346",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20347",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20348",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20349",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, pit"
+ },
+ {
+  "name": "part_20350",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20351",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, scratch"
+ },
+ {
+  "name": "part_20352",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20353",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20354",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20355",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20356",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20357",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20358",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20359",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20360",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20361",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20362",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack"
+ },
+ {
+  "name": "part_20363",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20364",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20365",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20366",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20367",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20368",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20369",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20370",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20371",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20372",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20373",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20374",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20375",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20376",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20377",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20378",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20379",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20380",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "3 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20381",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20382",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20383",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20384",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20385",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20386",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, scratch"
+ },
+ {
+  "name": "part_20387",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20388",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20389",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20390",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): scratch"
+ },
+ {
+  "name": "part_20391",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20392",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "3 unverified suspect region(s)"
+ },
+ {
+  "name": "part_20393",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20394",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20395",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20396",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20397",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): scratch"
+ },
+ {
+  "name": "part_20398",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): scratch"
+ },
+ {
+  "name": "part_20399",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20400",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20401",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20402",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20403",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20404",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20405",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20406",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20407",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20408",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20409",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, pit"
+ },
+ {
+  "name": "part_20410",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20411",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20412",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20413",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20414",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, pit"
+ },
+ {
+  "name": "part_20415",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20416",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20417",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20418",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20419",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "image still blurry after sharpening; request recapture"
+ },
+ {
+  "name": "part_20420",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20421",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "image still blurry after sharpening; request recapture"
+ },
+ {
+  "name": "part_20422",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20423",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20424",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20425",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20426",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20427",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20428",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "image still blurry after sharpening; request recapture"
+ },
+ {
+  "name": "part_20429",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20430",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20431",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20432",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20433",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20434",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit"
+ },
+ {
+  "name": "part_20435",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20436",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "image still blurry after sharpening; request recapture"
+ },
+ {
+  "name": "part_20437",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20438",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20439",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20440",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20441",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20442",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit"
+ },
+ {
+  "name": "part_20443",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20444",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20445",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20446",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20447",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20448",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20449",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20450",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20451",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20452",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20453",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20454",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, pit"
+ },
+ {
+  "name": "part_20455",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20456",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20457",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20458",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20459",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit, scratch"
+ },
+ {
+  "name": "part_20460",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20461",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20462",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "3 defect(s): crack, pit, scratch"
+ },
+ {
+  "name": "part_20463",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20464",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "5 unverified suspect region(s)"
+ },
+ {
+  "name": "part_20465",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20466",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20467",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): scratch"
+ },
+ {
+  "name": "part_20468",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20469",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20470",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, pit"
+ },
+ {
+  "name": "part_20471",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20472",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20473",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20474",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20475",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, scratch"
+ },
+ {
+  "name": "part_20476",
+  "gt": "PASS",
+  "degradation": "none",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20477",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20478",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20479",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20480",
+  "gt": "PASS",
+  "degradation": "glare",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "glare hid part of the surface; human should re-image or inspect"
+ },
+ {
+  "name": "part_20481",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20482",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20483",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "ESCALATE",
+  "agent_reason": "2 unverified suspect region(s)"
+ },
+ {
+  "name": "part_20484",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): pit"
+ },
+ {
+  "name": "part_20485",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20486",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20487",
+  "gt": "FAIL",
+  "degradation": "blur",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20488",
+  "gt": "FAIL",
+  "degradation": "dark",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "2 defect(s): crack, scratch"
+ },
+ {
+  "name": "part_20489",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20490",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20491",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20492",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): scratch"
+ },
+ {
+  "name": "part_20493",
+  "gt": "FAIL",
+  "degradation": "noise",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ },
+ {
+  "name": "part_20494",
+  "gt": "PASS",
+  "degradation": "blur",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20495",
+  "gt": "PASS",
+  "degradation": "noise",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20496",
+  "gt": "FAIL",
+  "degradation": "glare",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): pit"
+ },
+ {
+  "name": "part_20497",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20498",
+  "gt": "PASS",
+  "degradation": "dark",
+  "baseline": "PASS",
+  "agent": "PASS",
+  "agent_reason": "no defects found on a usable image"
+ },
+ {
+  "name": "part_20499",
+  "gt": "FAIL",
+  "degradation": "none",
+  "baseline": "FAIL",
+  "agent": "FAIL",
+  "agent_reason": "1 defect(s): crack"
+ }
+]

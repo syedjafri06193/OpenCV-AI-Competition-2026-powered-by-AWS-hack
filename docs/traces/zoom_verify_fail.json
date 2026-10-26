@@ -1,0 +1,329 @@
+{
+ "id": "ac25ae7b6be9",
+ "disposition": "FAIL",
+ "reason": "3 defect(s): crack, scratch, unknown",
+ "planner": "rules",
+ "opencv": "5.0.0",
+ "quality_initial": {
+  "sharpness": 40.2459,
+  "brightness": 30.6152,
+  "contrast": 2.0827,
+  "glare_frac": 0.0,
+  "noise": 0.0,
+  "issues": [
+   "underexposed"
+  ]
+ },
+ "quality_final": {
+  "sharpness": 40.1631,
+  "brightness": 136.3436,
+  "contrast": 4.3083,
+  "glare_frac": 0.0,
+  "noise": 0.0,
+  "issues": []
+ },
+ "defects": [
+  {
+   "bbox": [
+    149,
+    382,
+    133,
+    67
+   ],
+   "area": 658.0,
+   "elongation": 29.818,
+   "solidity": 0.989,
+   "strength": 26.98,
+   "kind": "scratch",
+   "confidence": 0.998
+  },
+  {
+   "bbox": [
+    44,
+    58,
+    99,
+    35
+   ],
+   "area": 470.0,
+   "elongation": 7.911,
+   "solidity": 0.449,
+   "strength": 27.654,
+   "kind": "crack",
+   "confidence": 0.82
+  },
+  {
+   "bbox": [
+    116,
+    436,
+    10,
+    6
+   ],
+   "area": 27.0,
+   "elongation": 2.857,
+   "solidity": 1.0,
+   "strength": 6.07,
+   "kind": "unknown",
+   "confidence": 0.55
+  }
+ ],
+ "candidates": [
+  {
+   "id": 0,
+   "status": "detected",
+   "bbox": [
+    149,
+    382,
+    133,
+    67
+   ],
+   "area": 658.0,
+   "elongation": 29.818,
+   "solidity": 0.989,
+   "strength": 26.98,
+   "kind": "scratch",
+   "confidence": 0.998
+  },
+  {
+   "id": 1,
+   "status": "detected",
+   "bbox": [
+    44,
+    58,
+    99,
+    35
+   ],
+   "area": 470.0,
+   "elongation": 7.911,
+   "solidity": 0.449,
+   "strength": 27.654,
+   "kind": "crack",
+   "confidence": 0.82
+  },
+  {
+   "id": 2,
+   "status": "rejected",
+   "bbox": [
+    378,
+    479,
+    16,
+    7
+   ],
+   "area": 41.0,
+   "elongation": 5.324,
+   "solidity": 1.0,
+   "strength": 6.07,
+   "kind": "scratch",
+   "confidence": 0.586
+  },
+  {
+   "id": 3,
+   "status": "rejected",
+   "bbox": [
+    445,
+    41,
+    17,
+    8
+   ],
+   "area": 40.0,
+   "elongation": 5.3,
+   "solidity": 0.952,
+   "strength": 6.07,
+   "kind": "scratch",
+   "confidence": 0.576
+  },
+  {
+   "id": 4,
+   "status": "rejected",
+   "bbox": [
+    106,
+    497,
+    19,
+    7
+   ],
+   "area": 35.0,
+   "elongation": 7.15,
+   "solidity": 0.854,
+   "strength": 5.396,
+   "kind": "scratch",
+   "confidence": 0.502
+  },
+  {
+   "id": 5,
+   "status": "confirmed",
+   "bbox": [
+    116,
+    436,
+    10,
+    6
+   ],
+   "area": 27.0,
+   "elongation": 2.857,
+   "solidity": 1.0,
+   "strength": 6.07,
+   "kind": "unknown",
+   "confidence": 0.55
+  }
+ ],
+ "trace": [
+  {
+   "i": 0,
+   "tool": "fix_exposure",
+   "args": {},
+   "reason": "capture issue 'underexposed' -> apply fix_exposure",
+   "observation": {
+    "quality_after": {
+     "sharpness": 40.1631,
+     "brightness": 136.3436,
+     "contrast": 4.3083,
+     "glare_frac": 0.0,
+     "noise": 0.0,
+     "issues": []
+    }
+   },
+   "ms": 10.1,
+   "planner": "rules"
+  },
+  {
+   "i": 1,
+   "tool": "detect_defects",
+   "args": {
+    "sensitivity": 1.0
+   },
+   "reason": "image conditioned; run detection",
+   "observation": {
+    "sensitivity": 1.0,
+    "new_candidates": [
+     0,
+     1
+    ],
+    "total": 2
+   },
+   "ms": 10.7,
+   "planner": "rules"
+  },
+  {
+   "i": 2,
+   "tool": "detect_defects",
+   "args": {
+    "sensitivity": 1.6
+   },
+   "reason": "sweep for faint defects at higher sensitivity",
+   "observation": {
+    "sensitivity": 1.6,
+    "new_candidates": [
+     2,
+     3,
+     4,
+     5
+    ],
+    "total": 6
+   },
+   "ms": 10.9,
+   "planner": "rules"
+  },
+  {
+   "i": 3,
+   "tool": "zoom_verify",
+   "args": {
+    "candidate_id": 2
+   },
+   "reason": "candidate 2 is uncertain -> zoom to verify",
+   "observation": {
+    "candidate_id": 2,
+    "verdict": "rejected",
+    "zoom_hits": 0
+   },
+   "ms": 1.2,
+   "planner": "rules"
+  },
+  {
+   "i": 4,
+   "tool": "zoom_verify",
+   "args": {
+    "candidate_id": 3
+   },
+   "reason": "candidate 3 is uncertain -> zoom to verify",
+   "observation": {
+    "candidate_id": 3,
+    "verdict": "rejected",
+    "zoom_hits": 0
+   },
+   "ms": 1.5,
+   "planner": "rules"
+  },
+  {
+   "i": 5,
+   "tool": "zoom_verify",
+   "args": {
+    "candidate_id": 4
+   },
+   "reason": "candidate 4 is uncertain -> zoom to verify",
+   "observation": {
+    "candidate_id": 4,
+    "verdict": "rejected",
+    "zoom_hits": 0
+   },
+   "ms": 1.0,
+   "planner": "rules"
+  },
+  {
+   "i": 6,
+   "tool": "zoom_verify",
+   "args": {
+    "candidate_id": 5
+   },
+   "reason": "candidate 5 is uncertain -> zoom to verify",
+   "observation": {
+    "candidate_id": 5,
+    "verdict": "confirmed",
+    "zoom_kind": "unknown",
+    "zoom_strength": 11.8,
+    "zoom_hits": 1
+   },
+   "ms": 1.1,
+   "planner": "rules"
+  },
+  {
+   "i": 7,
+   "tool": "finalize",
+   "args": {
+    "disposition": "FAIL",
+    "reason": "3 defect(s): crack, scratch, unknown"
+   },
+   "reason": "all evidence gathered",
+   "observation": {
+    "disposition": "FAIL",
+    "reason": "3 defect(s): crack, scratch, unknown"
+   },
+   "ms": 0.0,
+   "planner": "rules"
+  }
+ ],
+ "recaptures": 0,
+ "total_ms": 45.2,
+ "ground_truth": {
+  "name": "part_30238",
+  "defects": [
+   {
+    "kind": "scratch",
+    "bbox": [
+     149,
+     382,
+     133,
+     67
+    ]
+   },
+   {
+    "kind": "crack",
+    "bbox": [
+     44,
+     59,
+     99,
+     33
+    ]
+   }
+  ],
+  "degradation": "dark",
+  "label": "FAIL"
+ }
+}

@@ -1,0 +1,103 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: InspectAgent - agentic OpenCV 5 surface inspection on AWS Lambda (Graviton/arm64)
+
+Parameters:
+  BedrockModelId:
+    Type: String
+    Default: ""
+    Description: Optional Bedrock model or inference-profile ID for the LLM planner (empty = rule planner only)
+  DefaultPlanner:
+    Type: String
+    Default: rules
+    AllowedValues: [rules, bedrock]
+
+Conditions:
+  UseBedrock: !Not [!Equals [!Ref BedrockModelId, ""]]
+
+Resources:
+  EvidenceBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault: {SSEAlgorithm: AES256}
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      LifecycleConfiguration:
+        Rules:
+          - Id: expire-evidence
+            Status: Enabled
+            ExpirationInDays: 90
+
+  InspectionsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - {AttributeName: pk, AttributeType: S}
+        - {AttributeName: sk, AttributeType: S}
+      KeySchema:
+        - {AttributeName: pk, KeyType: HASH}
+        - {AttributeName: sk, KeyType: RANGE}
+      PointInTimeRecoverySpecification: {PointInTimeRecoveryEnabled: true}
+
+  InspectFunction:
+    Type: AWS::Serverless::Function
+    Metadata:
+      DockerTag: v1
+      DockerContext: ..
+      Dockerfile: Dockerfile
+    Properties:
+      PackageType: Image
+      Architectures: [arm64]
+      MemorySize: 2048
+      Timeout: 60
+      ReservedConcurrentExecutions: 10   # cost/abuse ceiling for a public demo URL
+      Tracing: Active
+      LoggingConfig: {LogFormat: Text}
+      Environment:
+        Variables:
+          STORE: aws
+          BUCKET: !Ref EvidenceBucket
+          TABLE: !Ref InspectionsTable
+          PLANNER: !Ref DefaultPlanner
+          BEDROCK_MODEL_ID: !Ref BedrockModelId
+      Policies:
+        - S3CrudPolicy: {BucketName: !Ref EvidenceBucket}
+        - DynamoDBCrudPolicy: {TableName: !Ref InspectionsTable}
+        - !If
+          - UseBedrock
+          - Statement:
+              - Effect: Allow
+                Action: [bedrock:InvokeModel]
+                Resource: "*"
+          - !Ref AWS::NoValue
+      FunctionUrlConfig:
+        AuthType: NONE
+
+  ErrorAlarm:
+    Type: AWS::CloudWatch::Alarm
+    Properties:
+      AlarmDescription: InspectAgent Lambda errors
+      Namespace: AWS/Lambda
+      MetricName: Errors
+      Dimensions: [{Name: FunctionName, Value: !Ref InspectFunction}]
+      Statistic: Sum
+      Period: 300
+      EvaluationPeriods: 1
+      Threshold: 3
+      ComparisonOperator: GreaterThanOrEqualToThreshold
+      TreatMissingData: notBreaching
+
+Outputs:
+  DemoUrl:
+    Description: Judge-accessible web endpoint
+    Value: !GetAtt InspectFunctionUrl.FunctionUrl
+  Bucket:
+    Value: !Ref EvidenceBucket
+  Table:
+    Value: !Ref InspectionsTable

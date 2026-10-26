@@ -1,0 +1,50 @@
+{
+  "baseline": {
+    "parts": 500,
+    "defective_parts": 290,
+    "defective_part_recall": 0.876,
+    "escaped_defective_parts": 36,
+    "false_reject_rate": 0.0,
+    "escalation_rate": 0.0,
+    "automated_accuracy": 0.928,
+    "defect_recall": 0.855,
+    "defect_precision": 1.0,
+    "mean_latency_ms": 19.9,
+    "safe_outcome_by_degradation": {
+      "blur": 1.0,
+      "dark": 0.908,
+      "glare": 0.98,
+      "noise": 0.787,
+      "none": 0.99
+    }
+  },
+  "agent": {
+    "parts": 500,
+    "defective_parts": 290,
+    "defective_part_recall": 1.0,
+    "escaped_defective_parts": 0,
+    "false_reject_rate": 0.019,
+    "escalation_rate": 0.122,
+    "automated_accuracy": 0.991,
+    "defect_recall": 0.992,
+    "defect_precision": 0.973,
+    "mean_latency_ms": 65.8,
+    "safe_outcome_by_degradation": {
+      "blur": 0.951,
+      "dark": 1.0,
+      "glare": 1.0,
+      "noise": 1.0,
+      "none": 1.0
+    },
+    "mean_steps": 4.52,
+    "tool_calls": {
+      "fix_exposure": 109,
+      "detect_defects": 1000,
+      "zoom_verify": 360,
+      "finalize": 500,
+      "suppress_glare": 102,
+      "denoise": 108,
+      "sharpen": 81
+    }
+  }
+}

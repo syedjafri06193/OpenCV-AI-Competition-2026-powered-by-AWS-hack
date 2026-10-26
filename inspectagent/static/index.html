@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>InspectAgent</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gauge:#E3E8EC; --panel:#F7F9FA; --ink:#1C2833; --steel:#5B6B78; --rule:#C5CED5;
+  --pass:#2E7D4F; --fail:#B8322A; --hold:#E0A91B; --hold-ink:#4A3500; --focus:#1F6FB2;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --gauge:#151C22; --panel:#1E272F; --ink:#E4EAEE; --steel:#93A3B0; --rule:#33414C;
+  --pass:#4DB37A; --fail:#E5615A; --hold:#F0C04A; --hold-ink:#2A1E00; --focus:#6FB0F0;}}
+:root[data-theme="dark"]{
+  --gauge:#151C22; --panel:#1E272F; --ink:#E4EAEE; --steel:#93A3B0; --rule:#33414C;
+  --pass:#4DB37A; --fail:#E5615A; --hold:#F0C04A; --hold-ink:#2A1E00; --focus:#6FB0F0;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--gauge);color:var(--ink);font:16px/1.5 Barlow,system-ui,sans-serif}
+h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:600;line-height:1.1;margin:0}
+button,select,input{font:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+header{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;padding:20px 24px 8px;max-width:1280px;margin:auto}
+header h1{font-size:34px;letter-spacing:.01em}
+header p{margin:0;color:var(--steel)}
+main{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:20px;max-width:1280px;margin:auto;padding:12px 24px 40px}
+@media (max-width:900px){main{grid-template-columns:1fr;padding:12px 16px 32px}header{padding:16px 16px 4px}}
+section{background:var(--panel);border:1px solid var(--rule);border-radius:6px;padding:18px}
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:end;margin-bottom:14px}
+label{display:flex;flex-direction:column;font-size:14px;color:var(--steel);gap:4px}
+select,input[type=text]{background:var(--gauge);color:var(--ink);border:1px solid var(--rule);border-radius:4px;padding:7px 9px}
+.btn{background:var(--ink);color:var(--panel);border:0;border-radius:4px;padding:9px 16px;font-weight:600;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--rule)}
+.btn:disabled{opacity:.5;cursor:wait}
+.view{position:relative;background:#000;border-radius:4px;overflow:hidden;aspect-ratio:1/1}
+.view img{width:100%;height:100%;object-fit:contain;display:block}
+.view .empty[hidden]{display:none}
+.view .empty{position:absolute;inset:0;display:grid;place-items:center;color:#9aa7b2;padding:24px;text-align:center}
+.toggle{display:flex;gap:6px;margin-top:10px}
+.toggle button[aria-pressed=true]{background:var(--ink);color:var(--panel)}
+/* the QC tag: the one loud element */
+.tag{display:none;margin-bottom:16px;border-radius:4px;padding:14px 18px 14px 34px;color:#fff;position:relative}
+.tag::before{content:"";position:absolute;left:14px;top:50%;width:10px;height:10px;margin-top:-5px;border-radius:50%;background:var(--panel)}
+.tag.show{display:block}
+.tag.PASS{background:var(--pass)} .tag.FAIL{background:var(--fail)}
+.tag.ESCALATE{background:var(--hold);color:var(--hold-ink)}
+.tag.ESCALATE::before{background:var(--hold-ink)}
+.tag strong{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-size:40px;font-weight:700;letter-spacing:.04em;display:block;line-height:1}
+.tag span{display:block;margin-top:4px}
+.meta{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:0 0 16px}
+.meta div{border-top:2px solid var(--rule);padding-top:6px}
+.meta dt{font-size:13px;color:var(--steel)} .meta dd{margin:0;font-weight:600}
+ol.trace{list-style:none;margin:0;padding:0;counter-reset:s}
+ol.trace li{counter-increment:s;display:grid;grid-template-columns:30px 1fr;gap:8px;padding:9px 0;border-top:1px solid var(--rule)}
+ol.trace li::before{content:counter(s);font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-weight:600;font-size:20px;color:var(--steel)}
+.tool{font-weight:600}
+.why{color:var(--steel);font-size:14px}
+details{font-size:13px;margin-top:2px} pre{white-space:pre-wrap;word-break:break-word;margin:4px 0 0;font-size:12px;background:var(--gauge);padding:8px;border-radius:4px}
+.review{display:none;border:2px solid var(--hold);border-radius:4px;padding:12px;margin-bottom:16px}
+.review.show{display:block}
+.review .row{display:flex;gap:8px;flex-wrap:wrap;align-items:end;margin-top:8px}
+.gt{font-size:14px;color:var(--steel);margin-top:8px}
+.queue{grid-column:1/-1}
+table{width:100%;min-width:640px;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:7px 6px;border-bottom:1px solid var(--rule)}
+th{color:var(--steel);font-weight:500}
+.d-PASS{color:var(--pass);font-weight:600}.d-FAIL{color:var(--fail);font-weight:600}.d-ESCALATE{color:var(--ink);background:var(--hold);padding:1px 6px;border-radius:3px;font-weight:600}
+.scroll{overflow-x:auto}
+.err{color:var(--fail);margin-top:8px}
+@media (prefers-reduced-motion:no-preference){.tag.show{animation:stamp .35s ease-out}@keyframes stamp{from{transform:scale(1.06);opacity:0}}}
+</style>
+</head>
+<body>
+<header>
+  <h1>InspectAgent</h1>
+  <p>Surface inspection that fixes its own view before it decides. OpenCV <span id="cv">5</span> on AWS.</p>
+</header>
+<main>
+  <section aria-labelledby="h-station">
+    <h2 id="h-station" style="font-size:24px;margin-bottom:12px">Camera station</h2>
+    <div class="controls">
+      <label>Capture condition
+        <select id="deg">
+          <option value="">Random</option><option value="none">Good light</option>
+          <option value="glare">Glare</option><option value="blur">Out of focus</option>
+          <option value="dark">Underexposed</option><option value="noise">Sensor noise</option>
+        </select></label>
+      <label>Defects
+        <select id="nd"><option value="">Random</option><option>0</option><option>1</option><option>2</option></select></label>
+      <label>Planner
+        <select id="planner"><option value="rules">Rule policy</option><option value="bedrock">Bedrock LLM</option></select></label>
+      <button class="btn" id="shoot">Shoot and inspect a part</button>
+      <label class="btn ghost" style="flex-direction:row;cursor:pointer" for="file">Upload a photo</label>
+      <input type="file" id="file" accept="image/png,image/jpeg" hidden>
+    </div>
+    <div class="view"><img id="img" alt="Inspected part" hidden><div class="empty" id="empty">Shoot a part from the station or upload a photo of a surface.</div></div>
+    <div class="toggle" role="group" aria-label="Image view">
+      <button class="btn ghost" id="v-ov" aria-pressed="true">Findings</button>
+      <button class="btn ghost" id="v-in" aria-pressed="false">First capture</button>
+    </div>
+    <p class="gt" id="gt"></p>
+  </section>
+
+  <section aria-labelledby="h-result" aria-live="polite">
+    <div class="tag" id="tag"><strong id="disp"></strong><span id="reason"></span></div>
+    <div class="review" id="review">
+      <h3 style="font-size:20px">Part held for your decision</h3>
+      <div class="row">
+        <label>Your name<input type="text" id="who" maxlength="60" autocomplete="name"></label>
+        <button class="btn" data-d="PASS">Release part</button>
+        <button class="btn" style="background:var(--fail)" data-d="FAIL">Send to rework</button>
+      </div>
+      <p class="err" id="rerr" hidden></p>
+    </div>
+    <dl class="meta" id="meta" hidden>
+      <div><dt>Action</dt><dd id="m-act"></dd></div>
+      <div><dt>Agent steps</dt><dd id="m-steps"></dd></div>
+      <div><dt>Time</dt><dd id="m-ms"></dd></div>
+    </dl>
+    <h2 style="font-size:24px;margin-bottom:6px">What the agent did</h2>
+    <ol class="trace" id="trace"><li style="display:block;border:0;color:var(--steel)">Each tool call, its reason and what OpenCV returned will appear here.</li></ol>
+    <p class="err" id="err" hidden></p>
+  </section>
+
+  <section class="queue" aria-labelledby="h-q">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap">
+      <h2 id="h-q" style="font-size:24px">Recent inspections</h2>
+      <button class="btn ghost" id="refresh">Refresh</button>
+    </div>
+    <div class="scroll"><table><thead><tr><th>Time (UTC)</th><th>Source</th><th>Agent</th><th>Final</th><th>Reason</th><th>Reviewer</th></tr></thead><tbody id="rows"></tbody></table></div>
+  </section>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+let cur=null, view='ov';
+function esc(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+const LABEL={PASS:'Pass',FAIL:'Reject',ESCALATE:'Hold'};
+const TOOLN={fix_exposure:'Fix exposure',denoise:'Remove noise',sharpen:'Sharpen',suppress_glare:'Flatten glare',
+ detect_defects:'Detect defects',zoom_verify:'Zoom in to verify',request_recapture:'Ask station to re-shoot',finalize:'Decide'};
+function show(r){
+  cur=r; $('empty').hidden=true; $('img').hidden=false; setView(view);
+  $('tag').className='tag show '+r.disposition; $('disp').textContent=LABEL[r.disposition]; $('reason').textContent=r.reason;
+  $('meta').hidden=false; $('m-act').textContent=r.action.replaceAll('_',' ');
+  $('m-steps').textContent=r.trace.length+(r.recaptures?` (${r.recaptures} re-shoot)`:''); $('m-ms').textContent=Math.round(r.total_ms)+' ms';
+  $('trace').innerHTML=r.trace.map(s=>`<li><div><span class="tool">${esc(TOOLN[s.tool]||s.tool)}</span>
+    <div class="why">${esc(s.reason)}</div><details><summary>OpenCV output</summary><pre>${esc(JSON.stringify(s.observation,null,1))}</pre></details></div></li>`).join('');
+  $('review').classList.toggle('show',r.disposition==='ESCALATE'); $('rerr').hidden=true;
+  const g=r.ground_truth; $('gt').textContent=g?`Ground truth for this simulated part: ${g.label==='FAIL'?g.defects.map(d=>d.kind).join(', '):'no defects'}, shot with ${g.degradation==='none'?'good light':g.degradation}.`:'';
+  loadRows();
+}
+function setView(v){view=v; if(cur) $('img').src=v==='ov'?cur.overlay_jpg:cur.input_jpg;
+  $('v-ov').setAttribute('aria-pressed',v==='ov'); $('v-in').setAttribute('aria-pressed',v==='in');}
+$('v-ov').onclick=()=>setView('ov'); $('v-in').onclick=()=>setView('in');
+async function call(url,opts){ $('err').hidden=true; $('shoot').disabled=true;
+  try{const r=await fetch(url,opts); const j=await r.json(); if(!r.ok) throw new Error(j.detail||r.statusText); show(j);}
+  catch(e){$('err').textContent='Inspection did not run: '+e.message; $('err').hidden=false}
+  finally{$('shoot').disabled=false}}
+$('shoot').onclick=()=>{const q=new URLSearchParams({planner:$('planner').value});
+  if($('deg').value) q.set('degradation',$('deg').value); if($('nd').value) q.set('defects',$('nd').value);
+  call('api/station/inspect?'+q,{method:'POST'})};
+$('file').onchange=e=>{const f=e.target.files[0]; if(!f) return; const fd=new FormData(); fd.append('file',f);
+  call('api/inspect?planner='+$('planner').value,{method:'POST',body:fd}); e.target.value=''};
+document.querySelectorAll('#review [data-d]').forEach(b=>b.onclick=async()=>{
+  const who=$('who').value.trim(); if(!who){$('rerr').textContent='Add your name so the decision is attributable.';$('rerr').hidden=false;$('who').focus();return}
+  const r=await fetch(`api/inspections/${cur.id}/review`,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({decision:b.dataset.d,reviewer:who})});
+  const j=await r.json(); if(!r.ok){$('rerr').textContent=j.detail||'Review not saved';$('rerr').hidden=false;return}
+  $('review').classList.remove('show'); $('tag').className='tag show '+j.final_disposition; $('disp').textContent=LABEL[j.final_disposition];
+  $('reason').textContent=`Decided by ${j.reviewer}. Part ${j.action.replaceAll('_',' ')}.`; $('m-act').textContent=j.action.replaceAll('_',' '); loadRows()});
+async function loadRows(){try{const r=await (await fetch('api/inspections?limit=15')).json();
+  $('rows').innerHTML=r.length?r.map(x=>`<tr><td>${esc((x.created_at||'').slice(5,16).replace('T',' '))}</td><td>${esc(x.source)}</td>
+  <td><span class="d-${x.disposition}">${LABEL[x.disposition]}</span></td><td>${x.final_disposition?`<span class="d-${x.final_disposition}">${LABEL[x.final_disposition]}</span>`:'Waiting'}</td>
+  <td>${esc(x.reason)}</td><td>${esc(x.reviewer||'')}</td></tr>`).join(''):'<tr><td colspan="6">No inspections yet. Shoot a part to start.</td></tr>'}catch(e){}}
+$('refresh').onclick=loadRows;
+fetch('api/health').then(r=>r.json()).then(h=>{$('cv').textContent=h.opencv; if(!h.bedrock_configured){const o=$('planner').options[1];o.disabled=true;o.textContent='Bedrock LLM (not configured)'}});
+loadRows();
+</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" font-family="Helvetica, Arial, sans-serif" font-size="13">
+  <rect width="960" height="560" fill="#F7F9FA"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#1C2833"/></marker>
+  </defs>
+  <text x="24" y="34" font-size="20" font-weight="bold" fill="#1C2833">InspectAgent architecture</text>
+
+  <!-- clients -->
+  <rect x="24" y="70" width="170" height="64" rx="5" fill="#fff" stroke="#5B6B78"/>
+  <text x="109" y="97" text-anchor="middle" font-weight="bold">Operator / judge</text>
+  <text x="109" y="117" text-anchor="middle" fill="#5B6B78">browser UI</text>
+  <rect x="24" y="160" width="170" height="64" rx="5" fill="#fff" stroke="#5B6B78"/>
+  <text x="109" y="187" text-anchor="middle" font-weight="bold">Camera station</text>
+  <text x="109" y="207" text-anchor="middle" fill="#5B6B78">simulated; can re-shoot</text>
+
+  <!-- AWS boundary -->
+  <rect x="230" y="56" width="706" height="480" rx="8" fill="none" stroke="#E0A91B" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="246" y="80" font-weight="bold" fill="#8a6500">AWS account</text>
+
+  <rect x="250" y="96" width="150" height="54" rx="5" fill="#fff" stroke="#1C2833"/>
+  <text x="325" y="119" text-anchor="middle" font-weight="bold">Lambda Function URL</text>
+  <text x="325" y="138" text-anchor="middle" fill="#5B6B78">HTTPS, public demo</text>
+
+  <!-- Lambda -->
+  <rect x="430" y="96" width="300" height="330" rx="6" fill="#E3E8EC" stroke="#1C2833"/>
+  <text x="580" y="118" text-anchor="middle" font-weight="bold">AWS Lambda, arm64 (Graviton) container</text>
+  <text x="580" y="136" text-anchor="middle" fill="#5B6B78">FastAPI + Mangum, Python 3.12</text>
+
+  <rect x="448" y="150" width="264" height="58" rx="4" fill="#fff" stroke="#5B6B78"/>
+  <text x="580" y="174" text-anchor="middle" font-weight="bold">Agent loop + safety guard</text>
+  <text x="580" y="194" text-anchor="middle" fill="#5B6B78">step budget, verify budget, PASS override</text>
+
+  <rect x="448" y="222" width="125" height="58" rx="4" fill="#fff" stroke="#5B6B78"/>
+  <text x="510" y="246" text-anchor="middle" font-weight="bold">Rule planner</text>
+  <text x="510" y="266" text-anchor="middle" fill="#5B6B78">default / fallback</text>
+  <rect x="587" y="222" width="125" height="58" rx="4" fill="#fff" stroke="#5B6B78"/>
+  <text x="649" y="246" text-anchor="middle" font-weight="bold">LLM planner</text>
+  <text x="649" y="266" text-anchor="middle" fill="#5B6B78">Converse tool use</text>
+
+  <rect x="448" y="294" width="264" height="116" rx="4" fill="#fff" stroke="#2E7D4F" stroke-width="2"/>
+  <text x="580" y="316" text-anchor="middle" font-weight="bold" fill="#2E7D4F">OpenCV 5 tools</text>
+  <text font-size="11.5" x="456" y="338" fill="#1C2833">assess_quality (Laplacian, MAD, saturation)</text>
+  <text font-size="11.5" x="456" y="356" fill="#1C2833">fix_exposure (gamma+CLAHE), denoise (NLM)</text>
+  <text font-size="11.5" x="456" y="374" fill="#1C2833">sharpen, suppress_glare (illum. division)</text>
+  <text font-size="11.5" x="456" y="392" fill="#1C2833">detect_defects (black-hat), zoom_verify</text>
+
+  <!-- AWS services -->
+  <rect x="760" y="140" width="160" height="58" rx="5" fill="#fff" stroke="#1C2833"/>
+  <text x="840" y="164" text-anchor="middle" font-weight="bold">Amazon Bedrock</text>
+  <text x="840" y="184" text-anchor="middle" fill="#5B6B78">optional LLM planner</text>
+  <rect x="760" y="226" width="160" height="58" rx="5" fill="#fff" stroke="#1C2833"/>
+  <text x="840" y="250" text-anchor="middle" font-weight="bold">Amazon S3</text>
+  <text x="840" y="270" text-anchor="middle" fill="#5B6B78">evidence images, traces</text>
+  <rect x="760" y="312" width="160" height="58" rx="5" fill="#fff" stroke="#1C2833"/>
+  <text x="840" y="336" text-anchor="middle" font-weight="bold">DynamoDB</text>
+  <text x="840" y="356" text-anchor="middle" fill="#5B6B78">records + review queue</text>
+  <rect x="760" y="398" width="160" height="58" rx="5" fill="#fff" stroke="#1C2833"/>
+  <text x="840" y="422" text-anchor="middle" font-weight="bold">CloudWatch + X-Ray</text>
+  <text x="840" y="442" text-anchor="middle" fill="#5B6B78">EMF metrics, logs, alarm</text>
+
+  <rect x="250" y="456" width="480" height="62" rx="5" fill="#fff" stroke="#5B6B78"/>
+  <text x="490" y="480" text-anchor="middle" font-weight="bold">Actions</text>
+  <text x="490" y="501" text-anchor="middle" fill="#5B6B78">PASS: release part · FAIL: divert to rework · ESCALATE: hold + human review</text>
+
+  <!-- arrows -->
+  <path d="M194,102 H250" stroke="#1C2833" marker-end="url(#a)"/>
+  <path d="M400,123 H430" stroke="#1C2833" marker-end="url(#a)"/>
+  <path d="M194,192 C330,192 360,330 448,330" fill="none" stroke="#1C2833" marker-end="url(#a)"/>
+  <text x="300" y="250" fill="#5B6B78">frames; re-shoot</text>
+  <text x="300" y="266" fill="#5B6B78">requests</text>
+  <path d="M712,236 H742 V169 H760" fill="none" stroke="#1C2833" stroke-dasharray="4 3" marker-end="url(#a)"/>
+  <path d="M730,255 H760" stroke="#1C2833" marker-end="url(#a)"/>
+  <path d="M730,341 H760" stroke="#1C2833" marker-end="url(#a)"/>
+  <path d="M730,420 H760" stroke="#1C2833" marker-end="url(#a)"/>
+  <path d="M580,426 V456" stroke="#1C2833" marker-end="url(#a)"/>
+</svg>

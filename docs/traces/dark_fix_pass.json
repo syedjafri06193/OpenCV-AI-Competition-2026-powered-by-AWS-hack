@@ -1,0 +1,100 @@
+{
+ "id": "616d8f205e08",
+ "disposition": "PASS",
+ "reason": "no defects found on a usable image",
+ "planner": "rules",
+ "opencv": "5.0.0",
+ "quality_initial": {
+  "sharpness": 39.7608,
+  "brightness": 35.8331,
+  "contrast": 1.5209,
+  "glare_frac": 0.0,
+  "noise": 0.0,
+  "issues": [
+   "underexposed"
+  ]
+ },
+ "quality_final": {
+  "sharpness": 39.6362,
+  "brightness": 142.4354,
+  "contrast": 3.006,
+  "glare_frac": 0.0,
+  "noise": 0.0,
+  "issues": []
+ },
+ "defects": [],
+ "candidates": [],
+ "trace": [
+  {
+   "i": 0,
+   "tool": "fix_exposure",
+   "args": {},
+   "reason": "capture issue 'underexposed' -> apply fix_exposure",
+   "observation": {
+    "quality_after": {
+     "sharpness": 39.6362,
+     "brightness": 142.4354,
+     "contrast": 3.006,
+     "glare_frac": 0.0,
+     "noise": 0.0,
+     "issues": []
+    }
+   },
+   "ms": 14.4,
+   "planner": "rules"
+  },
+  {
+   "i": 1,
+   "tool": "detect_defects",
+   "args": {
+    "sensitivity": 1.0
+   },
+   "reason": "image conditioned; run detection",
+   "observation": {
+    "sensitivity": 1.0,
+    "new_candidates": [],
+    "total": 0
+   },
+   "ms": 13.0,
+   "planner": "rules"
+  },
+  {
+   "i": 2,
+   "tool": "detect_defects",
+   "args": {
+    "sensitivity": 1.6
+   },
+   "reason": "sweep for faint defects at higher sensitivity",
+   "observation": {
+    "sensitivity": 1.6,
+    "new_candidates": [],
+    "total": 0
+   },
+   "ms": 12.8,
+   "planner": "rules"
+  },
+  {
+   "i": 3,
+   "tool": "finalize",
+   "args": {
+    "disposition": "PASS",
+    "reason": "no defects found on a usable image"
+   },
+   "reason": "all evidence gathered",
+   "observation": {
+    "disposition": "PASS",
+    "reason": "no defects found on a usable image"
+   },
+   "ms": 0.0,
+   "planner": "rules"
+  }
+ ],
+ "recaptures": 0,
+ "total_ms": 53.7,
+ "ground_truth": {
+  "name": "part_0011",
+  "defects": [],
+  "degradation": "dark",
+  "label": "PASS"
+ }
+}

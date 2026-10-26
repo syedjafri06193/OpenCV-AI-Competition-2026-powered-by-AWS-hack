@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" font-family="Helvetica, Arial, sans-serif" font-size="13">
+  <rect width="960" height="400" fill="#F7F9FA"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#1C2833"/></marker></defs>
+  <text x="24" y="34" font-size="20" font-weight="bold" fill="#1C2833">Agent workflow: perception → decision → action</text>
+
+  <rect x="24" y="70" width="190" height="96" rx="5" fill="#fff" stroke="#2E7D4F" stroke-width="2"/>
+  <text x="119" y="94" text-anchor="middle" font-weight="bold">1 · Perceive capture</text>
+  <text x="119" y="116" text-anchor="middle" fill="#5B6B78">assess_quality</text>
+  <text x="119" y="134" text-anchor="middle" fill="#5B6B78">blur, exposure, glare,</text>
+  <text x="119" y="152" text-anchor="middle" fill="#5B6B78">noise</text>
+
+  <rect x="262" y="70" width="210" height="96" rx="5" fill="#fff" stroke="#1C2833"/>
+  <text x="367" y="94" text-anchor="middle" font-weight="bold">2 · Fix the view</text>
+  <text x="367" y="116" text-anchor="middle" fill="#5B6B78">glare / blur + station:</text>
+  <text x="367" y="134" text-anchor="middle" fill="#5B6B78">request_recapture</text>
+  <text x="367" y="152" text-anchor="middle" fill="#5B6B78">else software remedy</text>
+
+  <rect x="520" y="70" width="190" height="96" rx="5" fill="#fff" stroke="#2E7D4F" stroke-width="2"/>
+  <text x="615" y="94" text-anchor="middle" font-weight="bold">3 · Detect + sweep</text>
+  <text x="615" y="116" text-anchor="middle" fill="#5B6B78">sensitivity 1.0 → defects</text>
+  <text x="615" y="134" text-anchor="middle" fill="#5B6B78">sensitivity 1.6 →</text>
+  <text x="615" y="152" text-anchor="middle" fill="#5B6B78">faint suspects</text>
+
+  <rect x="758" y="70" width="178" height="96" rx="5" fill="#fff" stroke="#2E7D4F" stroke-width="2"/>
+  <text x="847" y="94" text-anchor="middle" font-weight="bold">4 · Active look</text>
+  <text x="847" y="116" text-anchor="middle" fill="#5B6B78">zoom_verify each</text>
+  <text x="847" y="134" text-anchor="middle" fill="#5B6B78">suspect (≤5):</text>
+  <text x="847" y="152" text-anchor="middle" fill="#5B6B78">confirm / reject</text>
+
+  <rect x="262" y="216" width="448" height="70" rx="5" fill="#E3E8EC" stroke="#1C2833"/>
+  <text x="486" y="242" text-anchor="middle" font-weight="bold">5 · Decide (planner) + safety guard</text>
+  <text x="486" y="264" text-anchor="middle" fill="#5B6B78">no PASS while defects or unverified suspects remain; budgets enforced</text>
+
+  <rect x="24" y="320" width="270" height="56" rx="5" fill="#2E7D4F"/>
+  <text x="159" y="353" text-anchor="middle" fill="#fff" font-weight="bold">PASS → release to next station</text>
+  <rect x="345" y="320" width="270" height="56" rx="5" fill="#B8322A"/>
+  <text x="480" y="353" text-anchor="middle" fill="#fff" font-weight="bold">FAIL → divert to rework bin</text>
+  <rect x="666" y="320" width="270" height="56" rx="5" fill="#E0A91B"/>
+  <text x="801" y="345" text-anchor="middle" fill="#4A3500" font-weight="bold">ESCALATE → hold part</text>
+  <text x="801" y="364" text-anchor="middle" fill="#4A3500">human releases or rejects in UI</text>
+
+  <path d="M214,118 H262" stroke="#1C2833" marker-end="url(#a)"/>
+  <path d="M472,118 H520" stroke="#1C2833" marker-end="url(#a)"/>
+  <path d="M710,118 H758" stroke="#1C2833" marker-end="url(#a)"/>
+  <path d="M847,166 V251 H710" fill="none" stroke="#1C2833" marker-end="url(#a)"/>
+  <path d="M367,166 V190 H119 V166" fill="none" stroke="#1C2833" stroke-dasharray="4 3" marker-end="url(#a)"/>
+  <text x="140" y="205" fill="#5B6B78">re-shot frame re-assessed</text>
+  <path d="M380,286 L200,320" stroke="#1C2833" marker-end="url(#a)"/>
+  <path d="M486,286 V320" stroke="#1C2833" marker-end="url(#a)"/>
+  <path d="M600,286 L780,320" stroke="#1C2833" marker-end="url(#a)"/>
+</svg>
